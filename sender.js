@@ -18,22 +18,20 @@ const mailOptions = {
   text: 'Good Morning! This is your daily reminder.'
 };
 
-/*
-
-*/
-
-// Schedule the email to be sent every day at 10 AM EST
+// Schedules the email to be sent every day at 10 AM EST
 cron.schedule('0 10 * * *', () => {
-  // Send the email
+  // Send the email using the tranporter
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-        console.error('Error occurred while sending email:', error);
+            //If an error arises then print an error message in the console
+            console.error('Error occurred while sending email:', error);
         } else {
-        console.log('Email sent:', info.response);
+            //Print a confirmation message that shows an email was sent
+            console.log('Email sent:', info.response);
         }
     });
 }, {
-  timezone: 'America/New_York' // Set the timezone to EST
+  timezone: 'America/New_York' // Sets the timezone to EST
 });
 
 
