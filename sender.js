@@ -35,5 +35,5 @@ cron.schedule('0 10 * * *', () => {
 });
 
 
-
+// Confirmation message
 console.log('Email scheduler started.');
