@@ -52,7 +52,7 @@ If you wish set up a different account for sending emails, then do the following
 
 ## Application Set Up
 
-If you want to use an email other than ssairy.mailer@gmail.com to send the automated messages, do the following steps:
+If you chose to use an email other than ssairy.mailer@gmail.com to send the automated messages, do the following steps:
 
 - Open `sender.js` in a text editor off your choice
 - Within the `transporter` variable, set `user` to the email address you're using to send emails
