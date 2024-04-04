@@ -1,4 +1,4 @@
-# Automated Dailly Email Sender
+# Automated Daily Email Sender
 
 This is a Node.js application that is meant to send a scheduled email at 10 AM EST daily with a simple message.
 
