@@ -30,4 +30,11 @@ npm install nodemailer node-cron
 
 By default, this application is configured to use a gmail account that I have created (ssairy.mailer@gmail.com) to send emails. If you do not wish to change this, then you can skip to the [next section](#application-set-up).
 
+If you wish set up a different account for sending emails, then do the following steps:
+
+- Go to your [Google account page](https://myaccount.google.com/)
+- Switch to the account that you want to send automated emails from
+- Go to the `Security` Tab
+- Turn on `2-step verification`
+
 ## Application Set Up
