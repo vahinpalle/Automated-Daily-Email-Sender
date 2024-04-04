@@ -35,6 +35,13 @@ If you wish set up a different account for sending emails, then do the following
 - Go to your [Google account page](https://myaccount.google.com/)
 - Switch to the account that you want to send automated emails from
 - Go to the `Security` Tab
-- Turn on `2-step verification`
+- Turn on `2-Step Verification`
+- Within the `2-Step Verification` page, click on the option `App Passwords`
+- You should be given a dropdown labeled `Select app`
+- Click on the drop down and choose the option `Other`
+- Set the `App Name` field to Automated-Daily-Email-Sender
+- Click `Generate`
+- An automatically generated password will be given
+- Copy the password to your clipboard
 
 ## Application Set Up
