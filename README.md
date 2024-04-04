@@ -20,4 +20,6 @@ git clone https://github.com/srisairy2/Automated-Daily-Email-Sender.git
 
 Inside the directory where this README.md file is located, run the following code to install the nodemailer and node-cron libraries:
 
-`npm install nodemailer node-cron`
+```sh
+npm install nodemailer node-cron
+```
