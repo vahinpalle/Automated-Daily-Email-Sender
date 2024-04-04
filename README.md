@@ -32,7 +32,7 @@ By default, this application is configured to use a gmail account that I have cr
 
 If you wish set up a different account for sending emails, then do the following steps:
 
-- Go to your [Google account page](https://myaccount.google.com/)
+- Go to the [Google account page](https://myaccount.google.com/) of the email you want to use to send automated emails
 - Switch to the account that you want to send automated emails from
 - Go to the `Security` Tab
 - Turn on `2-Step Verification`
@@ -45,3 +45,29 @@ If you wish set up a different account for sending emails, then do the following
 - Copy the password to your clipboard
 
 ## Application Set Up
+
+If you want to use an email other than ssairy.mailer@gmail.com to send the automated messages, do the following steps:
+
+- Open `sender.js` in a text editor off your choice
+- Within the `transporter` variable, set `user` to the email adress you're using to send emails
+- Also withing `transporter`, set `pass` to the auto-generated password you obtained in the previous section
+- Within the `mailOptions` variables, set `from` to the email adress you're using to send emails
+
+Once that is done, you now need to configure the app to send the automated messages to a specific email. To do so, do the following steps:
+
+- Open `sender.js`
+- Within the `mailOptions` variable, set `to` to the email adress you want to send automated emails to
+
+## Start Sending Emails
+
+Once all the above steps are completed, cd to this directory in terminal and run the following command to run the application:
+
+```sh
+npm start
+```
+
+or
+
+```sh
+node sender
+```
