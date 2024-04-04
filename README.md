@@ -2,6 +2,12 @@
 
 This is a Node.js application that is meant to send a scheduled email at 10 AM EST daily with a simple message.
 
+### My Approach and the Decisions Made
+
+When approaching this project, the first thing I did was learn how to use the nodemailer and node-cron libraries. I decided to do so through reading the documentation for each library. Since the functinoality/pupose of each library is farily simple, this allowed me to learn how to do the project fairly quickly. Once I had done that, I moved on to actually writing the code for the application, which is in `sender.js`
+
+One important decision I made was to print out a confirmation message every time an email sent out, as that shows anyone who runs the application that it is functioning properly. I also chose to handle errors with sending emails by printing the error status, which helps users see if the application is doing what they want it to do.
+
 ## Install Necessary Packages/Files
 
 ### Node.js and NPM
@@ -50,7 +56,7 @@ If you want to use an email other than ssairy.mailer@gmail.com to send the autom
 
 - Open `sender.js` in a text editor off your choice
 - Within the `transporter` variable, set `user` to the email adress you're using to send emails
-- Also withing `transporter`, set `pass` to the auto-generated password you obtained in the previous section
+- Also within `transporter`, set `pass` to the auto-generated password you obtained in the previous section
 - Within the `mailOptions` variables, set `from` to the email adress you're using to send emails
 
 Once that is done, you now need to configure the app to send the automated messages to a specific email. To do so, do the following steps:
