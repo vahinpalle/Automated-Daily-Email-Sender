@@ -72,7 +72,7 @@ Once all the above steps are completed, cd to this directory in terminal and run
 npm start
 ```
 
-or
+If that does not work then run the following command instead:
 
 ```sh
 node sender
