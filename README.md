@@ -54,7 +54,7 @@ If you wish set up a different account for sending emails, then do the following
 
 If you chose to use an email other than ssairy.mailer@gmail.com to send the automated messages, do the following steps:
 
-- Open `sender.js` in a text editor off your choice
+- Open `sender.js` in a text editor of your choice
 - Within the `transporter` variable, set `user` to the email address you're using to send emails
 - Also within `transporter`, set `pass` to the auto-generated password you obtained in the previous section
 - Within the `mailOptions` variables, set `from` to the email address you're using to send emails
