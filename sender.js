@@ -1,39 +1,27 @@
 const cron = require('node-cron');
 const nodemailer = require('nodemailer');
-
-// Create a transporter using SMTP
-const transporter = nodemailer.createTransport({
-  service: 'gmail', // e.g., 'gmail'
+const emailTransporter = nodemailer.createTransport({
+  service: 'gmail',
   auth: {
-    user: 'ssairy.mailer@gmail.com',
-    pass: 'zptr vpei pmgm qvfl'
+    user: 'vahinayush@gmail.com',
+    pass: 'ahuj lkev dznx uaje'
   }
 });
-
-// Define the email options
-const mailOptions = {
-  from: 'ssairy.mailer@gmail.com',
-  to: 'srisairy2@gmail.com',
+const emailOptions = {
+  from: 'vahinayush@gmail.com',
+  to: 'vahin.palle@gmail.com',
   subject: 'Daily Reminder',
   text: 'Good Morning! This is your daily reminder.'
 };
-
-// Schedules the email to be sent every day at 10 AM EST
 cron.schedule('0 10 * * *', () => {
-  // Send the email using the tranporter
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            //If an error arises then print an error message in the console
-            console.error('Error occurred while sending email:', error);
-        } else {
-            //Print a confirmation message that shows an email was sent
-            console.log('Email sent:', info.response);
-        }
-    });
+  emailTransporter.sendMail(emailOptions, (error, info) => {
+    if (error) {
+      console.error('Error occurred:', error);
+    } else {
+      console.log('Email sent successfully:', info.response);
+    }
+  });
 }, {
-  timezone: 'America/New_York' // Sets the timezone to EST
+  timezone: 'America/New_York' 
 });
-
-
-// Confirmation message
 console.log('Email scheduler started.');
