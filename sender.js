@@ -16,7 +16,7 @@ const emailOptions = {
 cron.schedule('0 10 * * *', () => {
   emailTransporter.sendMail(emailOptions, (error, info) => {
     if (error) {
-      console.error('Error occurred:', error);
+      console.error('error:', error);
     } else {
       console.log('Email sent successfully:', info.response);
     }
